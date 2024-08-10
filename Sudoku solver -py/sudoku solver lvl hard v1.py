@@ -3,28 +3,28 @@
 
 #datastructure
 
-sgrid1 = {0: [0, 6, 7, 3, 0, 0, 0, 0, 9], 1: [0, 5, 0, 0, 0, 0, 1, 0, 6], 2: [9, 0, 0, 0, 0, 5, 0, 0, 0], 3: [0, 0, 0, 0, 2, 0, 4, 0, 8], 4: [5, 8, 0, 0, 0, 0, 0, 2, 1], 5: [7, 0, 4, 0, 9, 0, 0, 0, 0], 6: [0, 0, 0, 2, 0, 0, 0, 0, 4], 7: [2, 0, 5, 0, 0, 0, 0, 1, 0], 8: [1, 0, 0, 0, 0, 9, 5, 7, 0]}
-sgrid2 = {0: [0, 0, 0, 0, 8, 7, 3, 0, 9], 1: [0, 0, 0, 9, 0, 6, 0, 0, 0], 2: [0, 4, 5, 0, 0, 0, 0, 0, 0], 3: [0, 0, 4, 8, 0, 0, 6, 0, 5], 4: [2, 8, 0, 0, 0, 0, 0, 9, 1], 5: [5, 0, 6, 0, 0, 1, 7, 0, 0], 6: [0, 0, 0, 0, 0, 0, 5, 6, 0], 7: [0, 0, 0, 3, 0, 8, 0, 0, 0], 8: [4, 0, 8, 5, 6, 0, 0, 0, 0]}
-sgrid = {0: [1, 0, 7, 8, 0, 0, 6, 0, 4], 1: [0, 0, 2, 0, 9, 5, 0, 1, 0], 2: [0, 0, 0, 0, 0, 4, 3, 0, 0], 3: [0, 9, 0, 0, 7, 0, 5, 0, 3], 4: [0, 1, 5, 2, 0, 3, 9, 8, 6], 5: [0, 8, 0, 0, 0, 0, 4, 7, 1], 6: [0, 0, 1, 4, 2, 9, 0, 6, 0], 7: [0, 4, 0, 0, 8, 1, 0, 0, 0], 8: [0, 0, 0, 0, 0, 7, 1, 4, 0]}
+# sgrid1 = {0: [0, 6, 7, 3, 0, 0, 0, 0, 9], 1: [0, 5, 0, 0, 0, 0, 1, 0, 6], 2: [9, 0, 0, 0, 0, 5, 0, 0, 0], 3: [0, 0, 0, 0, 2, 0, 4, 0, 8], 4: [5, 8, 0, 0, 0, 0, 0, 2, 1], 5: [7, 0, 4, 0, 9, 0, 0, 0, 0], 6: [0, 0, 0, 2, 0, 0, 0, 0, 4], 7: [2, 0, 5, 0, 0, 0, 0, 1, 0], 8: [1, 0, 0, 0, 0, 9, 5, 7, 0]}
+# sgrid2 = {0: [0, 0, 0, 0, 8, 7, 3, 0, 9], 1: [0, 0, 0, 9, 0, 6, 0, 0, 0], 2: [0, 4, 5, 0, 0, 0, 0, 0, 0], 3: [0, 0, 4, 8, 0, 0, 6, 0, 5], 4: [2, 8, 0, 0, 0, 0, 0, 9, 1], 5: [5, 0, 6, 0, 0, 1, 7, 0, 0], 6: [0, 0, 0, 0, 0, 0, 5, 6, 0], 7: [0, 0, 0, 3, 0, 8, 0, 0, 0], 8: [4, 0, 8, 5, 6, 0, 0, 0, 0]}
+# sgrid = {0: [1, 0, 7, 8, 0, 0, 6, 0, 4], 1: [0, 0, 2, 0, 9, 5, 0, 1, 0], 2: [0, 0, 0, 0, 0, 4, 3, 0, 0], 3: [0, 9, 0, 0, 7, 0, 5, 0, 3], 4: [0, 1, 5, 2, 0, 3, 9, 8, 6], 5: [0, 8, 0, 0, 0, 0, 4, 7, 1], 6: [0, 0, 1, 4, 2, 9, 0, 6, 0], 7: [0, 4, 0, 0, 8, 1, 0, 0, 0], 8: [0, 0, 0, 0, 0, 7, 1, 4, 0]}
 
-changes = 0
-pchanges = 0
+# changes = 0
+# pchanges = 0
 
-pgrid={}
-for i in range(9):
-    if 0 in sgrid[i]: pgrid[i]=dict()
+# pgrid={}
+# for i in range(9):
+#     if 0 in sgrid[i]: pgrid[i]=dict()
 
-vchart = dict()
-for i in range(9):
-    vchart[i+1]={'g':[0,1,2,3,4,5,6,7,8],'r':[0,1,2,3,4,5,6,7,8],'c':[0,1,2,3,4,5,6,7,8]}
+# vchart = dict()
+# for i in range(9):
+#     vchart[i+1]={'g':[0,1,2,3,4,5,6,7,8],'r':[0,1,2,3,4,5,6,7,8],'c':[0,1,2,3,4,5,6,7,8]}
 
-gchart={}
-for num in range(1,10):
-    gchart[num]={}
+# gchart={}
+# for num in range(1,10):
+#     gchart[num]={}
 
-gcorrected={}
-for i in range(1,10):
-    gcorrected[i]={'sgrid':[],'drow':[],'dcol':[]}
+# gcorrected={}
+# for i in range(1,10):
+#     gcorrected[i]={'sgrid':[],'drow':[],'dcol':[]}
 # functions neededd
 
 #function for finding which grid it belongs to
@@ -376,16 +376,40 @@ def pencil_correct(pchanges):
 #running stuff
 #-------------
 
-##print('\t\t--------------\n\t\tSUDOKU SOLVER\n\t\t--------------')
-##print('\n\tInstructions\n\t------------')
-##print('Enter the data with the following instructions:')
-##print('\n * Each row data will be requested')
-##print('* Enter the numbers in each  row without spaces in btw them')
-##print('* Use  zero "0" instead of blank spaces in the puzzle')
-##print("  e.g. Enter '105780029'")
-##
-##for i in range(9):
-##    sgrid[i]=list(map(int,input('Enter {}th row:'.format(i+1))))
+print('\t\t--------------\n\t\tSUDOKU SOLVER\n\t\t--------------')
+print('\n\tInstructions\n\t------------')
+print('Enter the data with the following instructions:')
+print('\n * Each row data will be requested')
+print('* Enter the numbers in each  row without spaces in btw them')
+print('* Use  zero "0" instead of blank spaces in the puzzle')
+print("  e.g. Enter '105780029'")
+sgrid = {}
+for i in range(9):
+   sgrid[i]=list(map(int,input('Enter {}th row:'.format(i+1))))
+   
+# manual data
+sgrid = {0: [1, 0, 7, 8, 0, 0, 6, 0, 4], 1: [0, 0, 2, 0, 9, 5, 0, 1, 0], 2: [0, 0, 0, 0, 0, 4, 3, 0, 0], 3: [0, 9, 0, 0, 7, 0, 5, 0, 3], 4: [0, 1, 5, 2, 0, 3, 9, 8, 6], 5: [0, 8, 0, 0, 0, 0, 4, 7, 1], 6: [0, 0, 1, 4, 2, 9, 0, 6, 0], 7: [0, 4, 0, 0, 8, 1, 0, 0, 0], 8: [0, 0, 0, 0, 0, 7, 1, 4, 0]}
+
+changes = 0
+pchanges = 0
+
+pgrid={}
+for i in range(9):
+    if 0 in sgrid[i]: pgrid[i]=dict()
+
+vchart = dict()
+for i in range(9):
+    vchart[i+1]={'g':[0,1,2,3,4,5,6,7,8],'r':[0,1,2,3,4,5,6,7,8],'c':[0,1,2,3,4,5,6,7,8]}
+
+gchart={}
+for num in range(1,10):
+    gchart[num]={}
+
+gcorrected={}
+for i in range(1,10):
+    gcorrected[i]={'sgrid':[],'drow':[],'dcol':[]}
+   
+
 
 print('The entered puzzle is:')
 printsgrid()

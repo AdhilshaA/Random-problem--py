@@ -1,6 +1,7 @@
 # Collection of random problems
 
-## Sudoku Solver
+---
+## Sudoku Solver lite
 
 ### Problem:
 - Given a 9x9 sudoku board of hard difficulty, solve the board.
@@ -31,18 +32,58 @@
 - By using these techniques repeatedly, the board will be solved.
 - If the board is not solved, then the board is unsolvable (for now).
 
+### How to run:
+- Run `sudoku solver lvl hard v1.py`.
+- There sudoku board can be input into the program. The instructions are provided in the program.
+- The program will solve the board and display the solved board.
+
+---
 ## Translation assistant lite
 
 ### Problem:
 
+In sophisticated terms:
 - Given a poorly translated text file in English that contains repeated specific mistakes, correct the mistakes through substitution.
 - Additionally, We add some formatting to the text file depending on the context.
 - Here, the given context is a Chinese Novel translated using Google Translate. The highly domain-specific mistakes are repeated throughout the text, which includes the names of the characters, places, specific emotions etc.
+In simple terms:
+- Correct the mistakes in the novel I was reading. (it's as silly and simple as that 😝)
 
 ### Motivation:
 - Guess what? I liked reading that novel. But, the official translations stopped at some point. So, I used Google Translate to read the rest of the novel from raw sources.
 - The translation was bad. But, I was able to understand the context. So, I thought, why not correct the mistakes?
 - Why use programming to correct the mistakes?
   - Because the mistakes are repeated throughout the text.
-  - Because I can and it's fun.
-- 
+  - Because I can and it's fun. 😛
+- Why not use a proper translation tool?
+  - Well, the tool is not the problem. The problem is the specific mistakes that are repeated throughout the text due to the text provided by the raw sources and pieces perceived by Google Translate.
+
+### Techniques:
+  - A dictionary of mistakes and their corrections is maintained within the program.
+  - The program reads the text file and replaces the mistakes with the correct words.
+  - The program also adds formatting to the text file specifically for Chapter headings, character dialogues, and specific emotions.
+  - It skips empty lines, extra spaces, and special characters found in the text file.
+
+### How to run:
+- Run `translation special.py`.
+- The program will read the text file and correct the mistakes.
+
+---
+## Bacteria tracing lite
+
+### Problem:
+- Given images of a bacteria colony, trace the bacteria colony movement over time.
+- The bacteria can move in and out of plane of focus too.
+- The color of the bacteria is very distinct from the background.
+
+### Motivation:
+- One of my friend is working on a project where he needs to trace the bacteria colony movement over time. Wanted to try it out.
+
+### Techniques:
+- The program reads the images and finds the bacteria through color thresholding.
+- Analyse the position of bacteria that extenfs over pixels.
+- Repeat for all images to trace the bacteria movement over time.
+- Connect the bacteria positions over time to trace the movement (multiple possibilies).
+- ⚠️ The program was not completed due to time constraints. Abandoned for now.
+
+
